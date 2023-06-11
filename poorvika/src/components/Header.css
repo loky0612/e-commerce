@@ -58,7 +58,7 @@ ul{
 }
 .nav{
     max-height: 0;
-    transition: max-height .5s ease-out;
+    transition: max-height .1s ease-out;
 }
 /* Menu Icon */
 .hamb{
