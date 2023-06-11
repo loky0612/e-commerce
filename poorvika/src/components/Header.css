@@ -111,8 +111,8 @@ ul{
     top:0;
 }
 .logo img{
-    height: 4rem;
-    width: 7rem;
+    height: 5.5rem;
+    width: 10rem;
 }
 @media (min-width: 768px) {
     .nav{
