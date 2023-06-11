@@ -110,6 +110,10 @@ ul{
     transform: rotate(45deg);
     top:0;
 }
+.logo img{
+    height: 4rem;
+    width: 7rem;
+}
 @media (min-width: 768px) {
     .nav{
         max-height: none;
