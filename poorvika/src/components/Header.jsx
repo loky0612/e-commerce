@@ -11,12 +11,14 @@ const Header = () => {
         <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
         <nav class="nav">
             <ul class="menu">
-                <li><a href="/">Gallery</a></li>
-                <li><a href="/">Blog</a> </li>
-                <li><a href="/">About</a></li>
+                <li><a href="/">Delivery</a></li>
+                <li><a href="/">Items</a> </li>
+                <li><a href="/">Locate</a></li>
+                <li><a href="/">My account</a></li>
             </ul>
         </nav>
     </header>
+
     </div>
   )
 }

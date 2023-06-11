@@ -1,4 +1,5 @@
 import React from "react";
+import './Header.css';
 
 import SimpleImageSlider from "react-simple-image-slider";
 import samsung from '../Images/samsung.jpg';
@@ -32,7 +33,7 @@ const Banners = () => {
         height={504}
         images={images}
         showBullets={true}
-        showNavs={true}
+        showNavs={false}
         autoPlay/>
     </div>
   )
