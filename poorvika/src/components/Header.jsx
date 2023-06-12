@@ -2,6 +2,7 @@ import './Header.css';
 import logo from '../Images/Poorvika.png';
 import Banners from './Banners';
 
+
 const Header = () => {
   return (
     <div className='head'>
@@ -19,7 +20,7 @@ const Header = () => {
           </nav>
       </header>
       <Banners/>
- 
+    
     </div>
   )
 }
