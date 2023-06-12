@@ -1,158 +1,57 @@
-/* Theming */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
-    --white: #f9f9f9;
-    --black: #36383F;
-    --gray: #85888C;
-} /* variables*/
-
-/* Reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-body{
-    background-color: var(--white);
-    font-family: "Poppins", sans-serif;
-}
-a{
-    text-decoration: none;
-}
-ul{
-    list-style: none;
-}
-/* Header */
-.header{
-    box-shadow: 1px 1px 5px 0px var(--gray);
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: sticky;
-    height: 5.5rem;
-    top: 0;
-    width: 100%;
-}
-/* Logo */
-.logo{
-    display: inline-block;
-    color: var(--white);
-    font-size: 60px;
-    margin-left: 10px;
-}
-
-
-/* Nav menu */
-.nav{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: var(--white);
-    overflow: hidden;
-
-}
-.menu a{
-    display: block;
-    padding: 30px;
-    color: var(--black);
-    font-size: 20px;
-    font-weight: 500;
-}
-.menu a:hover{
-    background-color: var(--gray);
-}
-.nav{
-    max-height: 0;
-    transition: max-height .1s ease-out;
-}
-/* Menu Icon */
-.hamb{
-    cursor: pointer;
-    float: right;
-    padding: 40px 40px;
-}/* Style label tag */
-
-.hamb-line {
-    background: var(--black);
-    display: block;
-    height: 2.4px;
-    position: relative;
-    width: 24px;
-
-} /* Style span tag */
-
-.hamb-line::before,
-.hamb-line::after{
-    background: var(--black);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-.hamb-line::before{
-    top: 5px;
-}
-.hamb-line::after{
-    top: -5px;
-}
-
-.side-menu {
-    display: none;
-} /* Hide checkbox */
-/* Toggle menu icon */
-.side-menu:checked ~ nav{
-    max-height: 100%;
-}
-.side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
-}
-.side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top:0;
-}
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
 }
 .logo img{
     height: 5.5rem;
-    width: 14rem;
+    width: 13rem;
     margin-left: 5%;
 }
-.slider{
-    height: 100px;
+.search input{
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 50px;
+    border: 2px solid gray;
+    text-indent: 20px;
 }
-.ap{
-    position:relative;
-    top: 420px;
+.nav ul{
+    display: flex;
 }
-.heading{
-    margin: 10px;
+.nav ul li{
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    list-style: none;
 }
-.img .discount{
-    margin: 10px;
-}
-.mtop{
-    margin-top: 10px;
-}
-@media (min-width: 768px) {
-    .nav{
-        max-height: none;
-        top: 0;
-        position: relative;
-        float: right;
-        width: fit-content;
-        background-color: transparent;
+@media only screen and (max-width: 700px){
+    .logo img{
+        height: 1rem;
+        width: 3rem;
+        margin-left: 5%;
     }
-    .menu li{
-        float: left;
+    .nav ul li{
+        padding: 8px;
+        font-size: 0.3rem;
+        font-weight: 300;
+        list-style: none;
     }
-    .menu a:hover{
-        background-color: transparent;
-        color: var(--gray);
+    .search input{
+        height: 0.8rem;
+        width: 5rem;
+        border-radius: 50px;
+        border: 2px solid gray;
+        font-size: 3px;
+        text-indent: 10px;
+    }
 
-    }
-    .hamb{
-        display: none;
-    }
 }
