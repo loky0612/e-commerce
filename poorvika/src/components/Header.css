@@ -27,6 +27,7 @@ ul{
 .header{
     box-shadow: 1px 1px 5px 0px var(--gray);
     position: sticky;
+    height: 5.5rem;
     top: 0;
     width: 100%;
 }
@@ -37,6 +38,8 @@ ul{
     font-size: 60px;
     margin-left: 10px;
 }
+
+
 /* Nav menu */
 .nav{
     width: 100%;
@@ -118,6 +121,19 @@ ul{
 }
 .slider{
     height: 100px;
+}
+.ap{
+    position:relative;
+    top: 420px;
+}
+.heading{
+    margin: 10px;
+}
+.img .discount{
+    margin: 10px;
+}
+.mtop{
+    margin-top: 10px;
 }
 @media (min-width: 768px) {
     .nav{
