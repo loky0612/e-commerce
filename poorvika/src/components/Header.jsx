@@ -1,26 +1,26 @@
 import './Header.css';
 import logo from '../Images/Poorvika.png';
-import Banners from './Banners';
 
 
 const Header = () => {
   return (
     <div className='head'>
-      <header class="header">
-          <a href="/" class="logo"><img src={logo} alt='logo'/></a>
-          <input class="side-menu" type="checkbox" id="side-menu"/>
-          <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-          <nav class="nav">
-            <ul class="menu">
-              <li><a href="/">Delivery</a></li>
-              <li><a href="/">Items</a> </li>
-              <li><a href="/">Locate</a></li>
-              <li><a href="/">My account</a></li>
-            </ul>
-          </nav>
-      </header>
-      <Banners/>
-    
+      <div className='container'>
+        <div className='logo'>
+          <img src={logo} alt='logo'/>
+        </div>
+        <div className='search'>
+          <input type='text' placeholder='Search for Products, Brands, Offers' />
+        </div>
+        <div className='nav'>
+          <ul className='navlist'>
+            <li>Delivery</li>
+            <li>Locate</li>
+            <li>Items</li>
+            <li>My account</li>
+          </ul>
+        </div>
+      </div>
     </div>
   )
 }
